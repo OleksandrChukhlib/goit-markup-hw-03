@@ -9,26 +9,31 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
 
     <!--Header-->
-    <header>
-        <nav>
-            <a href="/index.html" class="logo">Web<span class="logo-studio">Studio</span></a>
-
-            <ul class="list site-nav">
-                <li><a href="" class="link current">Студия</a></li>
-                <li><a href="./portfolio.html" class="link">Портфолио</a></li>
-                <li><a href="" class="link">Контакты</a></li>
+    <header class="header">
+        <div class="header-container">
+            <nav>
+                <a href="/index.html" class="logo">Web<span class="logo-studio">Studio</span></a>
+    
+                <ul class="list site-nav">
+                    <li><a href="" class="link current">Студия</a></li>
+                    <li><a href="./portfolio.html" class="link">Портфолио</a></li>
+                    <li><a href="" class="link">Контакты</a></li>
+                </ul>
+            </nav>
+            <ul class="list auth-nav">
+                <li><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
+                <li><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
             </ul>
-        </nav>
-        <ul class="list auth-nav">
-            <li><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
-            <li><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
-        </ul>
+        </div>
     </header>
 
     <!--Hero-->
@@ -40,6 +45,7 @@
 
         <!--Features-->
         <section class="section">
+           <div class="features-container">
             <h2 class="section-title" hidden>Особенности </h2>
             <ul class="list features">
                 <li>
@@ -64,10 +70,12 @@
                     <p class="text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                 </li>
             </ul>
+           </div>
         </section>
 
         <!--About-->
         <section class="section">
+           <div class="about-container">
             <h2 class="section-title">Чем мы занимаемся</h2>
             <ul class="list about">
                 <li><img src="./images/box1.jpg" alt="Пальцы человека набирают програмный код на клавиатуре" width="370"
@@ -84,46 +92,51 @@
                 </li>
 
             </ul>
+           </div>
         </section>
 
         <!--Team-->
         <section class="section">
+           <div class="team-container">
             <h2 class="section-title">Наша команда</h2>
             <ul class="list team">
-                <li><img src="./images/img.jpg" alt="улыбающийся мужчина игорь демьяненко" width="270" height="260">
+                <li><img class="team-pic" src="./images/img.jpg" alt="улыбающийся мужчина игорь демьяненко" width="270" height="260">
                     <h3 class="title">Игорь Демьяненко</h3>
                     <p lang="en" class="text">Product Designer</p>
                 </li>
 
-                <li><img src="./images/img1.jpg" alt="улыбающаяся женщина ольга репина" width="270" height="260">
+                <li><img class="team-pic" src="./images/img1.jpg" alt="улыбающаяся женщина ольга репина" width="270" height="260">
                     <h3 class="title">Ольга Репина</h3>
                     <p lang="en" class="text">Frontend Developer</p>
                 </li>
 
-                <li><img src="./images/img2.jpg" alt="улыбающийся мужчина николай тарасов" width="270" height="260">
+                <li><img class="team-pic" src="./images/img2.jpg" alt="улыбающийся мужчина николай тарасов" width="270" height="260">
                     <h3 class="title">Николай Тарасов</h3>
                     <p lang="en" class="text">Marketing</p>
                 </li>
 
-                <li><img src="./images/img3.jpg" alt="улыбающийся мужчина михаил ермаков" width="270" height="260">
+                <li><img class="team-pic" src="./images/img3.jpg" alt="улыбающийся мужчина михаил ермаков" width="270" height="260">
                     <h3 class="title">Михаил Ермаков</h3>
                     <p lang="en" class="text">UI Designer</p>
                 </li>
             </ul>
+           </div>
         </section>
     </main>
 
     <!--Footer-->
     <footer class="footer">
+       <div class="footer-container">
         <a href="/index.html" class="logo">Web<span class="logo-studio">Studio</span></a>
         <address class="address">
             <ul class="list">
                 <li><a href="https://goo.gl/maps/sERwJR5rZnEGDeJr6" class="link location">г. Киев, пр-т Леси Украинки,
                         26</a></li>
                 <li><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
-                <li><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
+                <li><a href="tel:+380961111111" class="link link-tel">+38 096 111 11 11</a></li>
             </ul>
         </address>
+       </div>
     </footer>
 </body>
 
